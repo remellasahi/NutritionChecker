@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nutrition Checker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Josefin Sans', sans-serif;
+        box-sizing: border-box;
+    }
+    /*#parent{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items: center;
+    }*/
+    .hero{
+        background-color:gainsboro;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 22px;
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+    .logo{
+        color: rgb(225, 7, 7);
+        font-size: 35px;
+        cursor: pointer;
+        font-style: italic;
+    }
+
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px  25px;
+    }
+    nav ul li a{
+        color: rgb(225, 21, 21);
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    nav ul li a:hover{
+        color: #003af9;
+        transition: .4s;
+    }
+    .btn{
+        background-color:#f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 10px 25px;
+        border-radius: 30px;
+        transition: transform .4s; 
+    }
+    .btn:hover{
+	    transform: scale(1.2);
+    }
+    .main{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        color:black;
+        justify-content: center;
+        margin-top: 10px;
+        font-size:x-large;
+    }
+
+    body{
+        text-align: center;
+        background-size: cover;
+        background: linear-gradient(to right, #e0eafc, #cfdef3);
+    }
+    #img{
+        margin-bottom:-80px;
+        margin-top:30px;
+        position:absolute;
+        left:30px;
+        top:210px;
+    }
+    </style>
+</head>
+<body>
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Nutrition Checker</h2>
+			<ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+
+			</ul>
+		</nav>
+    </div>
+    <div id="parent">
+    <div id="img">
+        <img src="https://cdn.shopify.com/s/files/1/0248/9496/3802/files/Nutrition_Labels_to_Keep_It_Simple.jpg?v=1651164647" height="250px" width="250px">
+    </div>
+ 
+    <div class="main">
+        <br>
+        <h2 id="ques">WHAT IS DIET PLANNING AND WHY</h2> 
+        <hr class="line">
+        <br>
+        
+        <p>Most people associate diets with short-term weight loss and restrictive food intake. However, a diet plan is tailored   to an individual/'s health status, weight and lifestyle, along with their weight loss and health goals.
+
+            The diet plan acts as a bespoke template to steer your eating behaviour, exercise and lifestyle management towards optimal health and wellbeing.</p><br><br>
+
+        <p>This website helps to know the user how much nutrients <br>
+            they consume based on their search product.
+            <br>
+            It helps the user in their diet planning.
+            <br><br>
+            Don't have an account? <a href="/register">Register here</a><br>
+            <br>
+            Already have an Account <a href="/login">Signin  here</a>
+            </p>
+    </div>
+    </div>
+</body>
+</html>

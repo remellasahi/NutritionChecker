@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <style type="text/css">
+            body{
+                padding-top: 50px;
+                background: linear-gradient(100deg, #603813, #b29f94);
+            }
+            .form-signup{
+                margin: auto;
+                max-width: 400px;
+                background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+                padding: 15px;
+            }
+            .form-signup h2{
+                text-align: center;
+            }
+            #wh{
+                color:whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <h3 id="wh">Sign-up to Nutrition checker</h3>
+        <h5 id="wh">Let your body know what you intake...</h5>
+    </center>
+            <form action="/signup" class="form-signup" method="post">
+                <h2>Sign Up</h2>
+                <h4>Create your account</h4>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" required name="name" id="name" placeholder="Enter User name">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control"  required name="email" id="email" placeholder="Enter Email id">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" required name="pwd" id="pwd" placeholder="Enter Password">
+                </div>
+                <br>
+                <input type="submit" class="btn btn-success btn-block" name="submit" value="submit">
+                <p><%=sentence %></p>
+            </form>
+    </body>
+</html>
